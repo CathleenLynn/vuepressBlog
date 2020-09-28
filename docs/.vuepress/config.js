@@ -10,26 +10,61 @@ module.exports = {
     },
     themeConfig: {
       nav:[ // 导航栏配置
-        {text: '前端基础', link: 'https://baidu.com' },
-        {text: '算法题库', link: 'https://baidu.com'},
-        {text: '微博', link: 'https://baidu.com'},
+        {text: '主页', link: '/' },
+        {text: '自定义', link: '/wait/'},
+        {text: '百度', link: 'https://baidu.com'},
         // 多项，下拉形式
         {
-          text: '自定义1',
+          text: '前端基础',
           items: [
+            {text: 'JavaScript', link: '/javascript/'},
+            {text: 'CSS', link: '/css/'},
             {text: 'aaa', link: 'https://baidu.com'},
           ]
         },
         {
-          text: '自定义2',
+          text: 'VUE',
           items: [
             {text: '111', link: 'https://baidu.com'},
             {text: '222', link: 'https://baidu.com'},
+            {text: '333', link: 'https://baidu.com'},
+            {text: '444', link: 'https://baidu.com'},
           ]
         },      
       ],
-      sidebar: 'auto', // 侧边栏配置
-      sidebarDepth: 2, // 侧边栏显示2级
+      sidebar: {
+        '/javascript/': [
+          {
+            title: 'JavaScript',
+            collapsable: false,
+            children: [
+              { title: '函数声明', path: '/javascript/' },
+              { title: '数组方法', path: '/javascript/array' },
+              { title: 'test', path: '/javascript/test' },
+            ]
+          }
+        ],
+
+        '/css/': [
+          {
+            title: 'CSS',
+            collapsable: true,
+            children: [
+              { title: 'css1', path: '/css/' },
+              { title: 'css2', path: '/css/test2' },
+              { title: 'css3', path: '/css/test3' },
+            ]
+          }
+        ],
+  
+        // fallback
+        '/': [
+          '',        /* / */
+          'contact', /* /contact.html */
+          'about'    /* /about.html */
+        ]
+      },
+      sidebarDepth: 2, //左侧导航显示的层级
       lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
     }
   };
