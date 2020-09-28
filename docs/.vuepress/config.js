@@ -55,13 +55,6 @@ module.exports = {
               { title: 'css3', path: '/css/test3' },
             ]
           }
-        ],
-  
-        // fallback
-        '/': [
-          '',        /* / */
-          'contact', /* /contact.html */
-          'about'    /* /about.html */
         ]
       },
       sidebarDepth: 2, //左侧导航显示的层级
