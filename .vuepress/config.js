@@ -76,19 +76,19 @@ module.exports = {
       {
         "title": "王叨叨",
         "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1156743527@qq.com",
+        // "email": "1156743527@qq.com",
         "link": "https://wangdaodao.com/"
       },
       {
         "title": "赵十二",
         "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1156743527@qq.com",
+        // "email": "1156743527@qq.com",
         "link": "https://zhaoshier.top/"
       },
       {
         "title": "王金山",
-        "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1156743527@qq.com",
+        "desc": "Good Good Study，Day Day Up！！！",
+        // "email": "1156743527@qq.com",
         "link": "https://www.wangjinshan.top/"
       },
       {
@@ -105,7 +105,7 @@ module.exports = {
     "author": "Lynn",
     "authorAvatar": "/avatar.jpg",
     "record": "xxxx",
-    "startYear": "2017"
+    "startYear": "2020"
   },
   "markdown": {
     "lineNumbers": true

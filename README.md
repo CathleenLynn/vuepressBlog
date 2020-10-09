@@ -1,8 +1,14 @@
 ---
 home: true
 heroText: Lynn's Blog
+heroTextStyle: {
+  color: white
+}
 tagline: simple.
-# heroImage: /hero.png
+taglineStyle: {
+  color: white
+}
+# heroImage: /timg.jpg
 # heroImageStyle: {
 #   maxWidth: '600px',
 #   width: '100%',
@@ -11,8 +17,9 @@ tagline: simple.
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
+bgImage: '/haer.gif'
 bgImageStyle: {
-  height: '700px'
+  height: '750px'
 }
 isShowTitleInHome: false
 actionText: Guide

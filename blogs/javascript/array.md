@@ -28,8 +28,17 @@ find(),
 findIndex()
 
 Array.isArray()
+
+遍历数组的方法：
+forEach()
+map()
+filter()
+find()
+some()
+every()
+reduce()
 ```
-## 修改原数组：
+## ==-----修改原数组：==
 - push()
 - pop()
 - unshift()
@@ -37,7 +46,7 @@ Array.isArray()
 - sort()
 - reverse()
 - splice()
-## 不修改原数组：
+## ==-----不修改原数组：==
 - join()
 - concat()
 - slice()
@@ -56,7 +65,7 @@ console.log(arrCopy);//[1, 3, 5, 7, 9, 11, 13]
 console.log(arr);//[1, 3, 5, 7]------不修改原数组
 ```
 传入一个二维数组：
-```js{1}
+```
 var arr = [1, 3, 5, 7];
 var arrCopy2 = arr.concat([9, [11, 13]]);
 console.log(arrCopy2);//[1, 3, 5, 7, 9, Array[2]]
@@ -114,6 +123,20 @@ arr.forEach(function(item, index, arr){
 
 #### 遍历2——map()
 > - "映射"、对  数组每一项  运行  给定函数， 返回 每次函数调用的结果  组成的数组
+> - map() 不会对空数组进行检测。
+> - map() 不会改变原始数组。
+```
+array.map(function(currentValue,index,arr), thisValue)
+```
+
+参数 | 描述
+---|---
+currentValue | 必须。当前元素的值
+index | 可选。当前元素的索引值
+arr | 可选。当前元素属于的数组对象
+thisValue | 可选。对象作为该执行回调时使用，传递给函数，用作 "this" 的值。如果省略了 thisValue，或者传入 null、undefined，那么回调函数的 this 为全局对象。
+
+
 ```
 var arr = [1,2,3,4,5];
 arr.map(function(item){
@@ -122,12 +145,20 @@ arr.map(function(item){
 ```
 #### 遍历3——filter()
 
-```
-array.filter ( function ( currentValue [, index , arr]), [thisValue])
-// currentValue: 当前元素的值
-// thisValue: 对象作为该执行回调时使用，传递给函数，用作 "this" 的值。如果省略了 thisValue ，"this" 的值为 "undefined"
-```
 > - “过滤”、对  数组每一项  运行  给定函数， 返回 满足过滤条件  组成的数组
+> - filter() 不会对空数组进行检测。
+> - filter() 不会改变原始数组。
+
+```
+array.filter(function(currentValue,index,arr),thisValue)
+```
+参数 | 描述
+---|---
+currentValue | 必须。当前元素的值
+index | 可选。当前元素的索引值
+arr | 可选。当前元素属于的数组对象
+thisValue | 可选。对象作为该执行回调时使用，传递给函数，用作 "this" 的值。如果省略了 thisValue ，"this" 的值为 "undefined"
+
 ```
 var arr = [1,2,3,4,5,6,7,8]
 var arr2 = arr.filter(function(item, index, array){
@@ -137,10 +168,21 @@ console.log(arr2);  //  [2,3,4,5]
 ```
 
 #### 遍历4——find()
+
+> - 返回数组中  通过函数条件  的  第一个元素  的值
+> - find() 对于空数组，函数是不会执行的。
+> - find() 并没有改变数组的原始值。
 ```
- array.find(function(currentValue, index, arr),thisValue)
+array.find(function(currentValue, index, arr),thisValue)
 ```
-> - 返回数组中  通过函数条件  的  第一个元素  的值  
+
+参数 | 描述
+---|---
+currentValue | 必需。当前元素
+index | 可选。当前元素的索引值
+arr | 可选。当前元素所属的数组对象
+thisValue | 	可选。 传递给函数的值一般用 "this" 值。如果这个参数为空， "undefined" 会传递给 "this" 值
+
 ```
 var arr = [1,2,3,4,5,6,6,7]
 var res = arr.find(function(item){
@@ -150,7 +192,21 @@ console.log(res);  // 2
 ```
 
 #### 遍历5——some()
-> - 判断数组中  是否存在  满足条件的项，只要有一项满足条件， 返回true
+> - 判断数组中  是否存在  满足条件的项，只要有一项满足条件， 返回true，剩余的元素不会再执行检测
+> - some() 不会对空数组进行检测。
+> - some() 不会改变原始数组
+```
+array.some(function(currentValue,index,arr),thisValue)
+```
+
+参数 | 描述
+---|---
+currentValue | 必需。当前元素
+index | 可选。当前元素的索引值
+arr | 可选。当前元素所属的数组对象
+thisValue | 可选。对象作为该执行回调时使用，传递给函数，用作 "this" 的值。如果省略了 thisValue ，"this" 的值为 "undefined"
+
+
 ```
 var arr = [1,2,3,4,5,6,7,8]
 var arr2 = arr.some(function(item){
@@ -159,10 +215,21 @@ var arr2 = arr.some(function(item){
 console.log(arr2);  // true
 ```
 #### 遍历6——every()
+
+> - 判断数组中  每一项  是否满足条件，所有项  满足， 返回true
+> - 有一个元素不满足，则整个表达式返回 false ，且剩余的元素不会再进行检测。
 ```
 array.every(function(currentValue,index,arr), thisValue)
 ```
-> - 判断数组中  每一项  是否满足条件，所有项  满足， 返回true
+
+参数 | 描述
+---|---
+currentValue | 必需。当前元素
+index | 可选。当前元素的索引值
+arr | 可选。当前元素所属的数组对象
+thisValue | 可选。对象作为该执行回调时使用，传递给函数，用作 "this" 的值。如果省略了 thisValue ，"this" 的值为 "undefined"
+
+
 ```
 var arr = [1,2,3,4,5,6,7,8]
 var arr2 = arr.every(function(item){
@@ -171,5 +238,28 @@ var arr2 = arr.every(function(item){
 console.log(arr2);  // false
 ```
 #### 遍历7——reduce()
+> - reduce() 方法接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。
+> - reduce() 对于空数组是不会执行回调函数的。
+
+```
+array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+```
+
+参数 | 描述
+---|---
+total | 必需。初始值, 或者计算结束后的返回值。
+currentValue | 必需。当前元素
+index | 可选。当前元素的索引值
+arr | 可选。当前元素所属的数组对象
+initialValue | 可选。传递给函数的初始值
+
+
+```
+let arr = [2,7,3,1,8,12];
+arr.reduce(function(total, item){
+  return total+=item;
+},2)
+// 35
+```
 
 ![An image](./js-img/avatar.jpg)
