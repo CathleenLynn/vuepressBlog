@@ -20,6 +20,7 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
+    // "huawei": true,
     "nav": [
       {
         "text": "Home",
@@ -61,6 +62,7 @@ module.exports = {
         "api"
       ]
     },
+    "subSidebar": 'auto', //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     "type": "blog",
     "blogConfig": {
       "category": {
@@ -80,22 +82,22 @@ module.exports = {
         "link": "https://wangdaodao.com/"
       },
       {
-        "title": "赵十二",
+        "title": "Sweny",
         "desc": "Enjoy when you can, and endure when you must.",
         // "email": "1156743527@qq.com",
-        "link": "https://zhaoshier.top/"
+        "link": "https://www.sunwenyue.top/"
       },
-      // {
-      //   "title": "赵十二",
-      //   "desc": "Enjoy when you can, and endure when you must.",
-      //   // "email": "1156743527@qq.com",
-      //   "link": "https://zhaoshier.top/"
-      // },
       {
         "title": "王金山",
         "desc": "Good Good Study，Day Day Up！！！",
         // "email": "1156743527@qq.com",
         "link": "https://www.wangjinshan.top/"
+      },
+      {
+        "title": "赵十二",
+        "desc": "Enjoy when you can, and endure when you must.",
+        // "email": "1156743527@qq.com",
+        "link": "https://zhaoshier.top/"
       },
       {
         "title": "vuepress-theme-reco",

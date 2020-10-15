@@ -1,5 +1,13 @@
 ---
 home: true
+# heroImage: /avatar.jpg
+heroImageStyle: {
+  maxHeight: '200px',
+  display: block,
+  margin: '2.5rem auto 5rem',
+  borderRadius: '50%',
+  boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
+}
 heroText: Lynn's Blog
 heroTextStyle: {
   color: white
@@ -19,7 +27,7 @@ taglineStyle: {
 # }
 bgImage: '/haer.gif'
 bgImageStyle: {
-  height: '750px'
+  height: '600px'
 }
 isShowTitleInHome: false
 actionText: Guide
