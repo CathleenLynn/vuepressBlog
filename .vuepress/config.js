@@ -123,7 +123,7 @@ module.exports = {
       //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
-        theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+        theme: ['whiteCat', 'blackCat', 'wanko'],
         clean: false,
         messages: {
           welcome: '我是lookroot欢迎你的关注 ',
@@ -171,7 +171,7 @@ module.exports = {
         server: "netease",
         // 读取歌单
         type: "playlist",
-        mid: "13529775",
+        mid: "5289086328",
       },          
       // 不配置该项的话不会出现全局播放器
       aplayer: {
@@ -181,9 +181,9 @@ module.exports = {
         // 自动播放
         autoplay: true,
         // 歌曲栏折叠
-        listFolded:true,
+        listFolded: true,
         // 颜色
-        theme: '#f9bcdd',
+        theme: '#2980b9',
         // 播放顺序为随机
         order: 'random',
         // 初始音量
