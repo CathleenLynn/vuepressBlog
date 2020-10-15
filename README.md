@@ -25,7 +25,7 @@ taglineStyle: {
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
-bgImage: '/prideand.gif'
+bgImage: '/pride2.gif'
 bgImageStyle: {
   height: '600px'
 }

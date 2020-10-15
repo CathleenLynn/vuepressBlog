@@ -123,7 +123,7 @@ module.exports = {
       //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
-        theme: ['whiteCat', 'blackCat', 'wanko'],
+        theme: ['wanko', 'whiteCat', 'blackCat'],
         clean: false,
         messages: {
           welcome: '我是lookroot欢迎你的关注 ',
