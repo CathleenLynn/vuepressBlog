@@ -25,7 +25,7 @@ tagline: simple.
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
-bgImage: '/new2.gif'
+bgImage: '/new.gif'
 bgImageStyle: {
   height: '600px'
 }

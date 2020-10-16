@@ -21,6 +21,10 @@ module.exports = {
   "theme": "reco",
   "themeConfig": {
     mode: 'auto',
+    valineConfig: {
+      appId: 'nYjd8Yvlpocb9j7EQjwryiHs-gzGzoHsz',
+      appKey: '8tGB5X0Fql51mkjg1CPglUo5'
+    },
     "nav": [
       {
         "text": "Home",
@@ -119,8 +123,7 @@ module.exports = {
     "lineNumbers": true
   },
   plugins: [
-    [
-      //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
+    [//看板娘，先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
         theme: ['wanko', 'whiteCat', 'blackCat'],
@@ -135,8 +138,7 @@ module.exports = {
         height: 352
       }
     ],
-    [
-      // 彩带背景 先安装在配置， npm install vuepress-plugin-ribbon --save
+    [// 彩带背景 先安装在配置， npm install vuepress-plugin-ribbon --save
       "ribbon",
       {
         size: 90,     // width of the ribbon, default: 90
@@ -144,21 +146,19 @@ module.exports = {
         zIndex: -1    // z-index property of the background, default: -1
       }
     ],
-    [
-      //鼠标点击特效 先安装在配置， npm install vuepress-plugin-cursor-effects --save
+    [//鼠标点击特效 先安装在配置， npm install vuepress-plugin-cursor-effects --save
       "cursor-effects",
       {
         size: 3,                    // size of the particle, default: 2
-        shape: ['circle'],  // shape of the particle, default: 'star'
+        //shape: ['circle'],  // shape of the particle, default: 'star'
         zIndex: 999999999           // z-index property of the canvas, default: 999999999
       }
     ],
-    [
-      //动态标题 先安装在配置， npm install vuepress-plugin-dynamic-title --save
+    [//动态标题 先安装在配置， npm install vuepress-plugin-dynamic-title --save
       "dynamic-title",
       {
         showIcon: "/favicon.ico",
-        showText: "(/≧▽≦/)咦！又好了！",
+        showText: "(/≧▽≦/)你来啦！",
         hideIcon: "/failure.ico",
         hideText: "(●—●)喔哟，崩溃啦！",
         recoverTime: 2000
@@ -201,7 +201,19 @@ module.exports = {
       tip: {
           content: "复制成功!"
       }
-    }]
+    }],
+    // [
+    //   'vuepress-plugin-comment',    //评论插件，写在这里样式丑
+    //   {
+    //     choosen: 'valine', 
+    //     // options选项中的所有参数，会传给Valine的配置
+    //     options: {
+    //       el: '#valine-vuepress-comment',
+    //       appId: 'nYjd8Yvlpocb9j7EQjwryiHs-gzGzoHsz',
+    //       appKey: '8tGB5X0Fql51mkjg1CPglUo5'
+    //     }
+    //   }
+    // ]
     // [
     //   //先安装在配置， npm install @vuepress-plugin-meting --save
     //   'meting', {

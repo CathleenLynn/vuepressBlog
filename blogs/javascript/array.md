@@ -334,4 +334,5 @@ if(!arr.includes(arr[i])){
 注意点
 :::
 
-![An image](./js-img/avatar.jpg)
+<!-- ![An image](./js-img/avatar.jpg) -->
+
