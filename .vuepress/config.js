@@ -20,7 +20,7 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
-    // "huawei": true,
+    mode: 'auto',
     "nav": [
       {
         "text": "Home",
@@ -177,23 +177,29 @@ module.exports = {
       aplayer: {
         // 吸底模式
         fixed: true,
-        mini: true,
+        mini: false,
         // 自动播放
         autoplay: true,
         // 歌曲栏折叠
         listFolded: true,
         // 颜色
-        theme: '#2980b9',
+        // theme: '#2980b9',
         // 播放顺序为随机
         order: 'random',
         // 初始音量
         volume: 0.1,
         // 关闭歌词显示
-        lrcType: 0
+        lrcType: 3
       },
       mobile :{
         // 手机端去掉cover图
         cover: false,
+      }
+    }],
+    ["vuepress-plugin-nuggets-style-copy", {
+      copyText: "复制代码",
+      tip: {
+          content: "复制成功!"
       }
     }]
     // [

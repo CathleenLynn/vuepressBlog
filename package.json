@@ -20,6 +20,7 @@
     "vuepress-plugin-cursor-effects": "^1.0.0",
     "vuepress-plugin-dynamic-title": "^1.0.0",
     "vuepress-plugin-meting": "^0.1.1",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
     "vuepress-plugin-ribbon": "^1.0.2"
   },
   "description": "blog"

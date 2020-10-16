@@ -9,13 +9,13 @@ heroImageStyle: {
   boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
 }
 heroText: Lynn's Blog
-heroTextStyle: {
-  color: white
-}
+# heroTextStyle: {
+#   textcolor: white
+# }
 tagline: simple.
-taglineStyle: {
-  color: white
-}
+# taglineStyle: {
+#   textcolor: white
+# }
 # heroImage: /timg.jpg
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -25,7 +25,7 @@ taglineStyle: {
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
-bgImage: '/pride2.gif'
+bgImage: '/new.gif'
 bgImageStyle: {
   height: '600px'
 }
