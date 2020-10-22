@@ -1,6 +1,6 @@
 ---
 title: getElementById和querySelector方法的区别
-date: 2019-10-21
+date: 2019-10-23
 tags:
  -  javascript
  -  查找元素

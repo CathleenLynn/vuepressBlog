@@ -1,6 +1,6 @@
 ---
 title: 数组方法
-date: 2019-05-29
+date: 2019-05-28
 tags:
  -  javascript
  -  数组
