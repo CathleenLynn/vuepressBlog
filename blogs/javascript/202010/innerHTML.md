@@ -1,6 +1,6 @@
 ---
 title: innerHTML、innerText、value的区别
-date: 2020-10-21
+date: 2019-08-06
 tags:
  -  javascript
  -  innerHTML

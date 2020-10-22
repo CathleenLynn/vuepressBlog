@@ -1,6 +1,6 @@
 ---
 title: ES6遍历对象的方法
-date: 2020-10-21
+date: 2020-01-21
 tags:
  -  javascript
  -  ES6

@@ -1,6 +1,6 @@
 ---
 title: propotype相关方法
-date: 2020-10-21
+date: 2019-07-21
 tags:
  -  javascript
  -  prototype

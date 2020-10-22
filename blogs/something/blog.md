@@ -117,9 +117,11 @@ cd -
 2. 修改USERNAME 
 ```
 # 如果你想要部署到 https://USERNAME.github.io
-git push -f git@github.com:zhangyunchencc/zhangyunchencc.github.io.git master
+git push -f git@github.com:CathleenLynn/CathleenLynn.github.io.git master
 ```
-==仓库一负责显示网站内容，我们不需要改动它；日常开发和新增内容，都在仓库二中，并通过 npm run deploy 命令，将代码发布到仓库一。==
+:::danger
+仓库一负责显示网站内容，我们不需要改动它；日常开发和新增内容，都在仓库二中，并通过 npm run deploy 命令，将代码发布到仓库一。
+:::
 
 3. 在package.json中添加：
 ```
@@ -209,8 +211,8 @@ plugins:[...添加内容...]
       //动态标题 先安装在配置， npm install vuepress-plugin-dynamic-title --save
       "dynamic-title",
       {
-        showIcon: "/favicon.ico",
-        showText: "(/≧▽≦/)咦！又好了！",
+        showIcon: "/logo.png",
+        showText: "(/≧▽≦/)你来啦！",
         hideIcon: "/failure.ico",
         hideText: "(●—●)喔哟，崩溃啦！",
         recoverTime: 2000
