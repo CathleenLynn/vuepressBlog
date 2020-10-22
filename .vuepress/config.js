@@ -7,7 +7,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "/avatar.jpg"
+        "href": "/base/logo.png"
       }
     ],
     [
@@ -38,11 +38,43 @@ module.exports = {
       },
       {
         "text": "Docs",
-        "icon": "reco-message",
+        "icon": "reco-document",
         "items": [
           {
+            "text": "Vue",
+            "link": "https://cn.vuejs.org/v2/guide/"
+          },
+          {
+            "text": "Vue-CLI",
+            "link": "https://cli.vuejs.org/zh/guide/"
+          },
+          {
+            "text": "Vue-Loader",
+            "link": "https://vue-loader.vuejs.org/zh/"
+          },
+          {
+            "text": "Vue-Router",
+            "link": "https://router.vuejs.org/zh/"
+          },
+          {
+            "text": "Vuex",
+            "link": "https://vuex.vuejs.org/zh/"
+          },
+          {
             "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
+            "link": "https://vuepress-theme-reco.recoluan.com/views/1.x/"
+          },
+          {
+            "text": "axios",
+            "link": "http://www.axios-js.com/zh-cn/docs/"
+          },
+          {
+            "text": "现代JavaScript教程",
+            "link": "https://zh.javascript.info/"
+          },
+          {
+            "text": "Element-Ui",
+            "link": "https://element.eleme.cn/#/zh-CN"
           }
         ]
       },
@@ -104,18 +136,24 @@ module.exports = {
         "link": "https://zhaoshier.top/"
       },
       {
+        "title": "Spring",
+        "desc": "Enjoy when you can, and endure when you must.",
+        // "email": "1156743527@qq.com",
+        "link": "https://springlych.github.io"
+      },
+      {
         "title": "vuepress-theme-reco",
         "desc": "A simple and beautiful vuepress Blog & Doc theme.",
         "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
     ],
-    "logo": "/logo.png",
+    "logo": "/base/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "Lynn",
-    "authorAvatar": "/avatar.jpg",
+    "authorAvatar": "/base/logo.png",
     "record": "xxxx",
     "startYear": "2020"
   },
@@ -157,7 +195,7 @@ module.exports = {
     [//动态标题 先安装在配置， npm install vuepress-plugin-dynamic-title --save
       "dynamic-title",
       {
-        showIcon: "/favicon.ico",
+        showIcon: "/logo.png",
         showText: "(/≧▽≦/)你来啦！",
         hideIcon: "/failure.ico",
         hideText: "(●—●)喔哟，崩溃啦！",
