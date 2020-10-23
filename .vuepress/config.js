@@ -44,7 +44,7 @@ module.exports = {
       {
         "text": "留言板",
         "link": "/blogs/other/comment",
-        "icon": "reco-date"
+        "icon": "reco-message"
       },
       {
         "text": "Docs",
@@ -89,13 +89,69 @@ module.exports = {
         ]
       },
       {
+        "text": "Tools",
+        "icon": "reco-other",
+        "items": [
+          {
+            "text": "JSON编辑器",
+            "link": "https://www.bejson.com/jsoneditoronline"
+          },
+          {
+            "text": "PDF转Word",
+            "link": "https://smallpdf.com/cn/pdf-to-word"
+          },
+          {
+            "text": "文件转换",
+            "link": "https://convertio.co/zh/"
+          },
+          {
+            "text": "常用对照表",
+            "link": "https://tool.oschina.net/commons"
+          },
+          {
+            "text": "Markdown编辑器",
+            "link": "https://www.zybuluo.com/mdeditor"
+          },
+          {
+            "text": "二维码生成器",
+            "link": "https://cli.im/"
+          },
+          {
+            "text": "babel变异",
+            "link": "https://www.babeljs.cn/repl#?browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=Iw11A&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.11.6&externalPlugins="
+          },
+          {
+            "text": "编码转换器",
+            "link": "http://tool.chinaz.com/tools/native_ascii.aspx"
+          },
+          {
+            "text": "配置文件转换器",
+            "link": "https://element.eleme.cn/#/zh-CN"
+          },
+          {
+            "text": "正则表达式手册",
+            "link": "https://tool.oschina.net/uploads/apidocs/jquery/regexp.html"
+          },
+        ]
+      },
+      {
         "text": "Contact",
-        "icon": "reco-message",
+        "icon": "reco-account",
         "items": [
           {
             "text": "GitHub",
             "link": "https://github.com/CathleenLynn",
             "icon": "reco-github"
+          },
+          {
+            "text": "CSDN",
+            "link": "https://blog.csdn.net/weixin_43126036",
+            "icon": "reco-csdn"
+          },
+          {
+            "text": "微博",
+            "link": "https://weibo.com/u/1679735242",
+            "icon": "reco-weibo"
           }
         ]
       }
