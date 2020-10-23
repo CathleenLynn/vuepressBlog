@@ -25,6 +25,11 @@ module.exports = {
       appId: 'nYjd8Yvlpocb9j7EQjwryiHs-gzGzoHsz',
       appKey: '8tGB5X0Fql51mkjg1CPglUo5'
     },
+    // keyPage: {
+    //   keys: ['54ffc77c39adb324824ea4b08a430e52'], // 1.3.0 版本后需要设置为密文
+    //   color: '#42b983', // 登录页动画球的颜色
+    //   lineColor: '#42b983' // 登录页动画线的颜色
+    // },
     "nav": [
       {
         "text": "Home",
@@ -34,6 +39,11 @@ module.exports = {
       {
         "text": "TimeLine",
         "link": "/timeline/",
+        "icon": "reco-date"
+      },
+      {
+        "text": "留言板",
+        "link": "/blogs/other/comment",
         "icon": "reco-date"
       },
       {
@@ -152,6 +162,18 @@ module.exports = {
         "desc": "Enjoy when you can, and endure when you must.",
         // "email": "1156743527@qq.com",
         "link": "https://www.recoluan.com/"
+      },
+      {
+        "title": "黑夜键盘手",
+        "desc": "只要理解原理，就可有无穷变化",
+        // "email": "1156743527@qq.com",
+        "link": "https://leacoder.gitee.io/leacloudreco/"
+      },
+      {
+        "title": "君陌离",
+        "desc": "STUDY PROGRAMS AND RECORD LIFE",
+        // "email": "1156743527@qq.com",
+        "link": "https://songjun520.cn/"
       },
       {
         "title": "vuepress-theme-reco",

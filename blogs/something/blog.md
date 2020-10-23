@@ -297,8 +297,63 @@ plugins:[...添加内容...]
       }
     }]
 ```
+### 8.加密功能
+点击进入官网了解：
+[vuepress-theme-reco加密功能](https://vuepress-theme-reco.recoluan.com/views/1.x/password.html)
 
-### 8.评论插件与改进
+#### 1.项目加密
+```
+// .vuepress/config.js
+
+module.exports = {
+  theme: 'reco',
+  themeConfig: {
+    // 密钥
+    keyPage: {
+      keys: ['32位的 md5 加密密文'], // 1.3.0 版本后需要设置为密文
+      color: '#42b983', // 登录页动画球的颜色
+      lineColor: '#42b983' // 登录页动画线的颜色
+    }
+  }
+}
+```
+keys的32位的 md5 加密密文可以在官网进行转换。
+
+如图所示，输入密码才可以进入博客浏览：
+
+![An image](/something/blog1.png)
+
+#### 2.文章加密
+如果项目是公开的，而某些文章可能需要加密，需要在 frontmatter 以数组的格式设置 keys，可以设置多个密码，数组的值必须是字符串。
+
+```
+---
+title: event对象
+date: 2020-08-15
+tags:
+ -  javascript
+ -  event
+categories:
+ -  JavaScript
+author:
+ -  言梧
+keys:
+ - '32位的 md5 加密密文'
+---
+```
+如图所示：
+
+![An image](/something/blog2.png)
+
+![An image](/something/blog3.png)
+
+:::warning
+**加密页的遗留问题：** 从某篇单独加密的文章直接进入另一篇文章时（比如导航栏）加密无法隐藏
+:::
+
+
+
+### 9.评论插件
 
 刚开始采用的评论插件vuepress-plugin-comment：
 ```

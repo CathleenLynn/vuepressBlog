@@ -8,6 +8,8 @@ categories:
  -  JavaScript
 author:
  -  言梧
+keys:
+ - '54ffc77c39adb324824ea4b08a430e52'
 ---
 ## 1.事件对象(event)
 
