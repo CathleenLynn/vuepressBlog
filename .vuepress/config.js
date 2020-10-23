@@ -113,7 +113,7 @@ module.exports = {
     "friendLink": [
       {
         "title": "王叨叨",
-        "desc": "日照香炉生紫烟，遥看瀑布挂前川",
+        "desc": "无叨叨，不博客！不懂用户体验的前端不是好爸爸……",
         // "email": "1156743527@qq.com",
         "link": "https://wangdaodao.com/"
       },
@@ -160,7 +160,7 @@ module.exports = {
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
     ],
-    "logo": "/base/icon.jpg",      //博客左上角的图标
+    "logo": "/base/star.jpg",      //博客左上角的图标
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
