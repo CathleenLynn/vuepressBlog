@@ -7,7 +7,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "/base/logo.png"
+        "href": "/base/icon.jpg"      //Tab标签页的图标
       }
     ],
     [
@@ -113,14 +113,14 @@ module.exports = {
     "friendLink": [
       {
         "title": "王叨叨",
-        "desc": "Enjoy when you can, and endure when you must.",
+        "desc": "日照香炉生紫烟，遥看瀑布挂前川",
         // "email": "1156743527@qq.com",
         "link": "https://wangdaodao.com/"
       },
       {
         "title": "Sweny",
-        "desc": "Enjoy when you can, and endure when you must.",
-        // "email": "1156743527@qq.com",
+        "desc": "May your choices reflect your hopes, not your fears.",
+        "email": "1562519887@qq.com",
         "link": "https://www.sunwenyue.top/"
       },
       {
@@ -131,8 +131,8 @@ module.exports = {
       },
       {
         "title": "赵十二",
-        "desc": "Enjoy when you can, and endure when you must.",
-        // "email": "1156743527@qq.com",
+        "desc": "努力奋进的赵十二",
+        "email": "zhaoshiermy@sina.com",
         "link": "https://zhaoshier.top/"
       },
       {
@@ -142,18 +142,30 @@ module.exports = {
         "link": "https://springlych.github.io"
       },
       {
+        "title": "木华",
+        "desc": "有木名凌霄，擢秀非孤标",
+        // "email": "1156743527@qq.com",
+        "link": "http://zhanghualin.com/"
+      },
+      {
+        "title": "午后南杂",
+        "desc": "Enjoy when you can, and endure when you must.",
+        // "email": "1156743527@qq.com",
+        "link": "https://www.recoluan.com/"
+      },
+      {
         "title": "vuepress-theme-reco",
         "desc": "A simple and beautiful vuepress Blog & Doc theme.",
         "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
     ],
-    "logo": "/base/logo.png",
+    "logo": "/base/icon.jpg",      //博客左上角的图标
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "Lynn",
-    "authorAvatar": "/base/logo.png",
+    "authorAvatar": "/base/logo.png",      //个人资料的头像
     "record": "xxxx",
     "startYear": "2020"
   },
@@ -202,7 +214,8 @@ module.exports = {
         recoverTime: 2000
       }
     ],
-    ['meting', {
+    [//音乐插件
+      'meting', {
       // metingApi: "https://meting.sigure.xyz/api/music",
       meting: {
         // 网易
@@ -234,7 +247,8 @@ module.exports = {
         cover: false,
       }
     }],
-    ["vuepress-plugin-nuggets-style-copy", {
+    [//复制代码
+      "vuepress-plugin-nuggets-style-copy", {
       copyText: "复制代码",
       tip: {
           content: "复制成功!"

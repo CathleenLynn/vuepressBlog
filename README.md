@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /avatar.jpg
+# heroImage: /base/...    //背景图片上的内嵌图
 heroImageStyle: {
   maxHeight: '200px',
   display: block,
@@ -12,7 +12,7 @@ heroText: Lynn's Blog
 # heroTextStyle: {
 #   textcolor: white
 # }
-tagline: simple.
+tagline: 天大地大，世界比你想象中朦胧
 # taglineStyle: {
 #   textcolor: white
 # }

@@ -147,13 +147,19 @@ Settings > Custom domain
 ```
 
 ## 美化-添加插件
-参考：https://www.cnblogs.com/glassysky/p/13387739.html
+参考：
 
-主题优化：https://blog.csdn.net/howareyou2104/article/details/107412555
+[VuePress博客美化之reco主题考](https://www.cnblogs.com/glassysky/p/13387739.html)
+
+[vuepress reco主题优化与修改](https://blog.csdn.net/howareyou2104/article/details/107412555)
 
 .vuepress/config.js中：
 
+```
 plugins:[...添加内容...]
+```
+
+
 
 ### 1.看板娘
 
