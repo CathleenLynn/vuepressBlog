@@ -147,12 +147,12 @@ module.exports = {
             "text": "CSDN",
             "link": "https://blog.csdn.net/weixin_43126036",
             "icon": "reco-csdn"
-          },
-          {
-            "text": "微博",
-            "link": "https://weibo.com/u/1679735242",
-            "icon": "reco-weibo"
           }
+          // {
+          //   "text": "微博",
+          //   "link": "https://weibo.com/u/1679735242",
+          //   "icon": "reco-weibo"
+          // }
         ]
       }
     ],
