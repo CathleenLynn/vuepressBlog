@@ -325,13 +325,13 @@ module.exports = {
         cover: false,
       }
     }],
-    [//复制代码
-      "vuepress-plugin-nuggets-style-copy", {
-      copyText: "复制代码",
-      tip: {
-          content: "复制成功!"
-      }
-    }],
+    // [//复制代码
+    //   "vuepress-plugin-nuggets-style-copy", {
+    //   copyText: "复制代码",
+    //   tip: {
+    //       content: "复制成功!"
+    //   }
+    // }],
     // [
     //   'vuepress-plugin-comment',    //评论插件，写在这里样式丑
     //   {
