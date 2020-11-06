@@ -61,8 +61,10 @@ margin: 0 300px;
 ```
 加或不加，两者样式显示一样。区别在于center的宽度尺寸
 
-![An image](/css/layout1.png)
-![An image](/css/layout2.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout1.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout2.png)
 
 文字显示一致，紧跟浮动的left后，就不得不了解一下第2点，如下：
 
@@ -70,6 +72,7 @@ margin: 0 300px;
 
 具体讲解点击链接：
 [元素浮动之后文字的环绕显示](https://www.lynnwutong.top/blogs/css/202010/floatText.html)
+[Link](http://localhost:8080/blogs/css/202010/floatText.html)
 :::
 
 
@@ -81,8 +84,11 @@ margin: 0 300px;
 4. 中间left: 300px; right: 300px;
 
 其中3、4步如下图变化：
-![An image](/css/layout3.png)
-![An image](/css/layout4.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout3.png)
+
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout4.png)
 
 ```html
 <article class="absoluteWrapper">
@@ -126,7 +132,8 @@ margin: 0 300px;
 :::danger
 由于本篇布局在一个页面中，所以上文的absolute布局会影响到后面flex布局的元素，如图：
 
-![An image](/css/layout5.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout5.png)
 
 所以额外给外容器flexWrapper设置margin-top: 120px;隔开，不然会与absolute布局完全重合。
 :::
@@ -164,7 +171,8 @@ margin: 0 300px;
 }
 ```
 连同absolute布局一起如图所示：
-![An image](/css/layout6.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout6.png)
 
 
 ### 4. table布局
@@ -177,11 +185,16 @@ margin: 0 300px;
 
 其中，步骤1、2、3、4后分别为：
 
-![An image](/css/layout7.png)
-![An image](/css/layout8.png)
-![An image](/css/layout9.png)
-![An image](/css/layout10.png)
-![An image](/css/layout11.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout7.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout8.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout9.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout10.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout11.png)
 ```html
 <article class="tableWrapper">
     <div class="left">left</div>
@@ -252,7 +265,8 @@ margin: 0 300px;
   background-color: rgb(100, 197, 168);
 }
 ```
-![An image](/css/layout12.png)
+
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/layout12.png)
 
 
 ### 5种三栏布局方式总结

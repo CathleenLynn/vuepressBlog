@@ -41,7 +41,7 @@ author:
 ```
 页面展示是这样的：
 
-![An image](/css/floatText1.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/floatText1.png)
 
 将second设置左浮：
 ```css
@@ -52,7 +52,7 @@ author:
 ```
 后显示如下：
 
-![An image](/css/floatText2.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/floatText1.png)
 
 > 既然浮动元素second脱离了文档流，为什么third中的文字会环绕在浮动元素的周边而不是跟浮动元素second重合呢？
 
@@ -103,8 +103,8 @@ author:
 
 两者如图所示：
 
-![An image](/css/floatText3.png)
 
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/floatText1.png)
 
 1. 绝对定位是使元素完全的脱离文档流，也是我们大部分人理解的浮动，影响了自身的位置，但并没有影响到其它元素的内部布局。
 2. 绝对定位是将元素彻底的从文档流中删除，并相对于某个父元素进行定位，元素原先在文档流中所占的空间会关闭，就好像该元素原来不存在一样，该元素再也不会影响其他元素的布局了。

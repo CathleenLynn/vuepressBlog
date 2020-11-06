@@ -41,6 +41,11 @@ find()
 some()
 every()
 reduce()
+for...in
+for...of
+数组去重
+伪数组→数组
+数组扁平化
 ```
 
 ## 方法分类（修改&不修改原数组）
@@ -361,9 +366,113 @@ if(!arr.includes(arr[i])){
 5. [...arguments]
 6. （slice源码就是普通的方法）
 
-:::danger 请注意
-注意点
-:::
+## 数组扁平化
+### 扁平化方法1：
+> 循环数组+递归
+> 循环数组，如果数据中还有数组(isArray判断)的话，递归调用flatten扁平函数（利用for循环扁平），用concat连接，最终返回result;
 
-<!-- ![An image](./js-img/avatar.jpg) -->
+```js
+function flatten(arr){
+    var res = []
+    for(var i = 0; i < arr.length; i++){
+        if(Array.isArray(arr[i])){
+            res = res.concat(flatten(arr[i]))
+        }else{
+            res.push(arr[i])
+        }
+    }
+    return res
+}
+var arr = [1,[2,3,[4]]]
+flatten(arr)  // [1,2,3,4]
+```
+
+### 扁平化方法2：
+> 利用apply
+
+可以用apply的原因如下：
+```js
+var arr = [1,[2,3,[4]]]
+[].concat.apply([], arr);
+//[1,2,3,[4]]
+```
+> 利用arr.some判断(isArray判断)当数组中还有数组的话，递归调用flatten扁平函数(利用apply扁平), 用concat连接，最终返回arr;
+
+```js
+function flatten(arr){
+    while(arr.some(item => Array.isArray(item))){
+        arr = [].concat.apply([], arr)
+    }
+    return arr
+}
+var arr = [1,[2,3,[4]]]
+flatten(arr)  // [1,2,3,4]
+```
+
+### 扁平化方法3：
+> reduce方法
+
+可以用reduce的原因如下：
+```js
+var flattened = arr.reduce(function(prev, cur){
+    return prev.concat(cur)
+}, [])
+console.log(flattened)
+// [1,2,3,[4]]
+```
+
+> 使用reduce, 当数组中还有数组断(isArray判断)的话，递归调用flatten扁平函数(利用reduce扁平), 用concat连接，最终返回arr.reduce的返回值;
+
+```js
+function flatten(arr){
+    return arr.reduce(function(prev, cur){
+        return prev.concat(Array.isArray(cur) ? flatten(cur) : cur)
+    }, [])
+}
+var arr = [1,[2,3,[4]]]
+flatten(arr)  // [1,2,3,4]
+```
+
+
+### 扁平化方法4：
+> es6展开运算符...
+
+可以用...的原因如下：
+```js
+var arr = [1,[2,3,[4]]]
+console.log(...arr)
+//[1,2,3,[4]]
+```
+
+> 利用arr.some判断当数组中还有数组断(isArray判断)的话，递归调用flatten扁平函数(利用es6展开运算符扁平), 用concat连接，最终返回arr;
+
+```js
+function flatten(arr){
+    while(arr.some(item => Array.isArray(item))){
+        arr = [].concat(...arr)
+    }
+    return arr
+}
+var arr = [1,[2,3,[4]]]
+flatten(arr)  // [1,2,3,4]
+```
+
+
+
+### 扁平化方法5：
+> toString()——数组元素为数字的情况
+
+```js
+[1,[2,3,[4]]].toString()
+//"1,2,3,4"
+```
+> 数组适用toString()方法后变成以逗号分割的字符串，然后map遍历数组把每一项再变回整数并返回map后的结果。
+
+```js
+function flatten(arr){
+    return arr.toString().split(',').map(item => parseInt(item))
+}
+var arr = [1,[2,3,[4]]]
+flatten(arr)  // [1,2,3,4]
+```
 

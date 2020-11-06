@@ -10,7 +10,6 @@ categories:
 author:
  -  言梧
 ---
-
 ## 全局安装VuePress
 
 ```
@@ -38,7 +37,7 @@ vuepressBlogDemo
 ## 文件内容编写
 > config.js:
 
-```js
+```
 module.exports = {
   title: 'Lynn\'s blog',
   description: '我的个人网站',
@@ -158,7 +157,6 @@ Settings > Custom domain
 ```
 plugins:[...添加内容...]
 ```
-
 
 
 ### 1.看板娘
@@ -297,6 +295,7 @@ plugins:[...添加内容...]
       }
     }]
 ```
+
 ### 8.加密功能
 点击进入官网了解：
 [vuepress-theme-reco加密功能](https://vuepress-theme-reco.recoluan.com/views/1.x/password.html)
@@ -321,7 +320,7 @@ keys的32位的 md5 加密密文可以在官网进行转换。
 
 如图所示，输入密码才可以进入博客浏览：
 
-![An image](/something/blog1.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog1.png)
 
 #### 2.文章加密
 如果项目是公开的，而某些文章可能需要加密，需要在 frontmatter 以数组的格式设置 keys，可以设置多个密码，数组的值必须是字符串。
@@ -343,17 +342,17 @@ keys:
 ```
 如图所示：
 
-![An image](/something/blog2.png)
 
-![An image](/something/blog3.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog2.png)
 
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog3.png)
 :::warning
 **加密页的遗留问题：** 从某篇单独加密的文章直接进入另一篇文章时（比如导航栏）加密无法隐藏
 :::
 
 
-
 ### 9.评论插件
+
 
 刚开始采用的评论插件vuepress-plugin-comment：
 ```
@@ -394,7 +393,8 @@ module.exports = {
 
 最后就是这样子的：
 
-![An image](/something/comment.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog4.png)
+
 :::danger
 但是，加入插件后，页面加载速度超级慢
 
@@ -407,7 +407,7 @@ vercel就登场啦
 
 ### 1.注册vercel
 可以直接用github账号登录vercel，如下图：
-![An image](/something/vercel11.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog5.png)
 :::danger
 注意：
 
@@ -418,19 +418,27 @@ vercel不支持QQ邮箱。由于我的github是用QQ邮箱的，所以在Github-
 
 ### 2.引入仓库与项目
 选择github后，输入用来存放网站的GitHub Repo的地址，
-![An image](/something/vercel22.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog6.png)
 
 :::danger
 Repository的URL是github仓库的https地址，不要弄错
 :::
 
 然后点Continue，他会让你选择包含source code的文件：
-![An image](/something/vercel1.png)
-![An image](/something/vercel2.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog7.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog8.png)
 
 （PS：如果是第一次使用Vercel的话，上面两步里会弹出在GitHub中安装vercel的许可，同意即可）
 
-![An image](/something/vercel3.png)
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/blog9.png)
 
 ### 3.配置自定义域名
+
+
+## ps.关于图片
+
+一开始放在项目中，后来采用图床
+
+参考：https://lovelijunyi.gitee.io/posts/90b0.html
+
 

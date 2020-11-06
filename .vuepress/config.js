@@ -32,12 +32,12 @@ module.exports = {
     // },
     "nav": [
       {
-        "text": "Home",
+        "text": "主页",
         "link": "/",
         "icon": "reco-home"
       },
       {
-        "text": "TimeLine",
+        "text": "时间轴",
         "link": "/timeline/",
         "icon": "reco-date"
       },
@@ -47,7 +47,28 @@ module.exports = {
         "icon": "reco-message"
       },
       {
-        "text": "Docs",
+        "text": "生活",
+        "icon": "reco-three",
+        "items": [
+          {
+            "text": "旅行",
+            "link": "/tag/travel/",
+            "icon": "reco-tag",
+          },
+          {
+            "text": "摄影",
+            "link": "/tag/photo/",
+            "icon": "reco-tag",
+          },
+          {
+            "text": "美术馆",
+            "link": "/tag/museum/",
+            "icon": "reco-tag",
+          },
+        ]
+      },
+      {//Docs
+        "text": "文档",
         "icon": "reco-document",
         "items": [
           {
@@ -88,8 +109,8 @@ module.exports = {
           }
         ]
       },
-      {
-        "text": "Tools",
+      {//Tools
+        "text": "工具",
         "icon": "reco-other",
         "items": [
           {
@@ -135,7 +156,7 @@ module.exports = {
         ]
       },
       {
-        "text": "Contact",
+        "text": "联系我",
         "icon": "reco-account",
         "items": [
           {
@@ -169,11 +190,11 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "Category"
+        "text": "分类"
       },
       "tag": {
         "location": 3,
-        "text": "Tag"
+        "text": "标签"
       }
     },
     "friendLink": [
@@ -251,6 +272,10 @@ module.exports = {
     "lineNumbers": true
   },
   plugins: [
+    // [//go-top
+    //   //package.json中devDependencies中"@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    //   'go-top'
+    // ],
     [//看板娘，先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
@@ -270,14 +295,14 @@ module.exports = {
       "ribbon",
       {
         size: 90,     // width of the ribbon, default: 90
-        opacity: 0.8, // opacity of the ribbon, default: 0.3
+        opacity: 0.5, // opacity of the ribbon, default: 0.3
         zIndex: -1    // z-index property of the background, default: -1
       }
     ],
     [//鼠标点击特效 先安装在配置， npm install vuepress-plugin-cursor-effects --save
       "cursor-effects",
       {
-        size: 3,                    // size of the particle, default: 2
+        size: 2,                    // size of the particle, default: 2
         //shape: ['circle'],  // shape of the particle, default: 'star'
         zIndex: 999999999           // z-index property of the canvas, default: 999999999
       }
@@ -332,18 +357,6 @@ module.exports = {
     //       content: "复制成功!"
     //   }
     // }],
-    // [
-    //   'vuepress-plugin-comment',    //评论插件，写在这里样式丑
-    //   {
-    //     choosen: 'valine', 
-    //     // options选项中的所有参数，会传给Valine的配置
-    //     options: {
-    //       el: '#valine-vuepress-comment',
-    //       appId: 'nYjd8Yvlpocb9j7EQjwryiHs-gzGzoHsz',
-    //       appKey: '8tGB5X0Fql51mkjg1CPglUo5'
-    //     }
-    //   }
-    // ]
     // [
     //   //先安装在配置， npm install @vuepress-plugin-meting --save
     //   'meting', {

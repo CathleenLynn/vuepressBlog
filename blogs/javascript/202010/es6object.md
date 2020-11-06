@@ -170,6 +170,6 @@ var obj = {name:'tom', age:12, sex:'male'};
 const map = new Map(Object.entries(obj))
 console.log(map);
 ```
-![An image](/es6/objectMethod1.png)
 
+![](https://gitee.com/lynnwutong/blog-img/raw/master/img/objectMethod1.png)
 
