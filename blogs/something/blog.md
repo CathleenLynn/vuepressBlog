@@ -442,4 +442,22 @@ Repository的URL是github仓库的https地址，不要弄错
 
 参考：https://lovelijunyi.gitee.io/posts/90b0.html
 
+## 添加文章的分类和标签
+
+```
+---
+title: Vuepress + github + vercel 搭建部署博客
+date: 2020-10-20
+tags:
+ -  vuepress
+ -  github
+ -  vercel
+categories:
+ -  something
+author:
+ -  言梧
+sticky: 1
+---
+```
+sticky: 置顶
 

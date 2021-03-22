@@ -8,6 +8,7 @@ categories:
  -  JavaScript
 author:
  -  言梧
+sticky: 1
 ---
 # 数组方法
 
