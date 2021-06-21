@@ -15,7 +15,7 @@ author:
 ## 上代码
 ```js
 var a;
-if(a!=null&&typeof(a)!=undefined&&a!=''){
+if(a != null && typeof(a) != undefined && a != ''){
     //a有内容才执行的代码  
 
 等价于------------------------------------------------

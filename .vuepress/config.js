@@ -350,13 +350,13 @@ module.exports = {
         cover: false,
       }
     }],
-    // [//复制代码
-    //   "vuepress-plugin-nuggets-style-copy", {
-    //   copyText: "复制代码",
-    //   tip: {
-    //       content: "复制成功!"
-    //   }
-    // }],
+    [//复制代码
+      "vuepress-plugin-nuggets-style-copy", {
+      copyText: "复制代码",
+      tip: {
+          content: "复制成功!"
+      }
+    }],
     // [
     //   //先安装在配置， npm install @vuepress-plugin-meting --save
     //   'meting', {
